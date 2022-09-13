@@ -89,12 +89,10 @@ const CharList = (props) => {
     const spinner = loading && !newItemLoading ? <Spinner/> : null;
 
     return (
-        <div className="char__list">
-            <ul className="char__grid">     
+        <div className="char__list"> 
                 {errorMessage}
                 {spinner}
                 {items}
-            </ul>
              <button
                  className="button button__main button__long"
                  disabled={newItemLoading}
